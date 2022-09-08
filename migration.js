@@ -655,11 +655,11 @@ async function run() {
     // let transferObj;
     // let length
 
-    // if (!_.isEmpty(transferObjStore)) {
-    //     length = transferObjStore.length
-    //     transferObj = transferObjStore;
-    //     const data = await Loop(transferObj);
-    // }
+    if (!_.isEmpty(transferObjStore)) {
+        length = transferObjStore.length
+        transferObj = transferObjStore;
+        const data = await Loop(transferObj);
+    }
     console.log("done")
 }
 run()
